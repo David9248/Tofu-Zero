@@ -2,8 +2,6 @@
 
 Open Source Macro Keyboard based on QMK with VIAL integration. It runs on an RP2040 Zero and comes with 1 OLED screen, 1 encoder, a 3x3 matrix, and RGB lighting.
 
-
-
 ## Components
 
 **Required:**
@@ -73,6 +71,20 @@ Solder the rotary encoder - it only fits one way, making installation straightfo
 ## Firmware
 
 We use QMK firmware with VIAL integration. You're free to modify the code or create your own implementation.
+
+### Quick Setup (Pre-Assembled Units)
+
+If you bought a pre-assembled Tofu-Zero and just want to configure the keys and LEDs:
+
+1. **Install VIAL** from [https://get.vial.today/](https://get.vial.today/)
+2. Plug in your keyboard - it should be automatically detected by VIAL
+3. Use the VIAL interface to:
+   - Remap any key on any layer
+   - Configure LED lighting effects
+   - Adjust encoder behavior
+   - Set up macros
+
+No firmware flashing required!
 
 ### Flashing the Firmware
 
