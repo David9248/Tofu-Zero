@@ -100,7 +100,7 @@ No firmware flashing required!
 3. Compile the firmware:
 
 ```bash
-qmk compile -kb minimini -km vial
+qmk compile -kb tofuzero -km vial
 ```
 
 4. Enter bootloader mode on your RP2040:
@@ -128,6 +128,8 @@ The firmware currently supports 7 frames for the OLED animation. You can customi
 
 2. **Convert frames to code:**
    - Go to [image2cpp](https://javl.github.io/image2cpp/)
+   -
+
    - Upload each frame
    - Settings:
      - Black background
@@ -139,6 +141,20 @@ The firmware currently supports 7 frames for the OLED animation. You can customi
 3. **Update the firmware:**
    - Replace the bit arrays in the firmware code with the output from image2cpp
    - Recompile and flash the updated firmware
+
+
+### Change Layer Names:
+1. Go to keymap.c
+2. <img width="570" height="726" alt="image" src="https://github.com/user-attachments/assets/3363179c-5e49-42fa-b2fb-a6ddd3578d21" />
+3. <img width="464" height="485" alt="image" src="https://github.com/user-attachments/assets/8ee5e213-76d5-4095-920c-0440a1421882" />
+4. <img width="559" height="477" alt="image" src="https://github.com/user-attachments/assets/a11b4d3a-6372-4346-badb-9abe815ebdbd" />
+5. change any name reference of layers.
+
+
+
+
+
+
 
 ## Electrical Schematic
 
