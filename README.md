@@ -96,7 +96,11 @@ No firmware flashing required!
 #### Compilation and Flashing
 
 1. Download the project files from the repository
-2. Navigate to the correct folder in your QMK/VIAL directory
+2. Navigate to the correct folder in your QMK/VIAL directory -
+ In qmk msys Type :
+```bash
+cd C:/Users/User/vial-qmk
+```
 3. Compile the firmware:
 
 ```bash
@@ -104,10 +108,12 @@ qmk compile -kb tofuzero -km vial
 ```
 
 4. Enter bootloader mode on your RP2040:
-   - Hold the BOOT button on the RP2040
+   - Hold the BOOT button on the RP2040 
    - While holding, plug it into your computer
    - Keep holding for a moment after connecting
    - The device should appear as a drive on your PC
+
+  You can calso enter BOOTLOADER mode in your tofuzero by holding the first key in the keyboard matrix while connecting into your PC  - if Bootmagic is activated 
 
 5. Copy the compiled file:
    - Locate `minimini_vial.uf2` in your VIAL root folder (typically `C:\Users\User\vial-qmk`)
